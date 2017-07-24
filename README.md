@@ -3,7 +3,7 @@
 ## What is WaMDaM
 
 
-
+https://github.com/amabdallah/Tests/blob/master/WaMDaM_workflow.jpg
 
 1. 
 
