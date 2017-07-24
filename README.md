@@ -45,8 +45,8 @@ https://github.com/amabdallah/Demo_WaMDaM_Wizard/tree/master/datasets
 
 3. Check out this online system for controlled vocabulary that WaMDaM Wizard uses. http://vocabulary.wamdam.org/
 
-4. Bring samples of your own data if you're interested in organizing them into a WaMDaM database. 
-
+4. Bring samples of your own data if you're interested in organizing them into a WaMDaM database. Download this excel template to work with.
+https://github.com/amabdallah/Demo_WaMDaM_Wizard/blob/master/datasets/template/WaMDaM_Template_July24.xlsm
 
 # Demo instructions (in the workshop)  
 1. Give a quick demo on how to use the Wizard
