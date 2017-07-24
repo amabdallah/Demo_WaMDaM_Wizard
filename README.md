@@ -2,7 +2,7 @@
 
 In this workshop, we will work with the WaMDaM Wizard to load data into a SQLite database, then query, and compare data across datasets in the Bear River Watershed, Utah. We will use the online controlled vocabulary system to relate different terms across the datasets.  
 
-Please follow the pre-workshop instructions below and let me know if you have issues to solve them before the workshop.  
+Please follow the pre-workshop instructions below and let me know if you have issues to solve them before the workshop. Probably its best if you clone the repo to your descktop (but the Wizard executable needs to be downloaded from its url) 
 
 ## What is WaMDaM?
 
@@ -39,6 +39,7 @@ Double click at the executable. You should see this window. Hopefully it is self
 
 
 2. Download the excel files at the link below. The Excel files have different water management data for the Bear River Watershed, Utah.
+https://github.com/amabdallah/Demo_WaMDaM_Wizard/tree/master/datasets
 
 <img src="https://github.com/amabdallah/Demo_WaMDaM_Wizard/blob/master/Application.PNG" alt="Drawing" style="width: 60px;"/>  
 
