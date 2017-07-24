@@ -14,12 +14,13 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 
 
 
-
 # Demo instructions
 
 
 1. Download the WaMDaM Wizard executable. It works on Windows [7 and 10] 64 bit operating systems 
 https://bft.usu.edu/96zs3
-Double click at the executable. The 
+Double click at the executable. You should see this window. Hopefully it is self-explantatory to work with. 
 
+<img src="https://github.com/amabdallah/Tests/blob/master/Wizard.PNG" alt="Drawing" style="width: 60px;"/>  
 
+2. 
