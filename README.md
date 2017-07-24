@@ -21,10 +21,8 @@ The WaMDaM Wizard is an open-source, cross-platfom, Python-based graphaical user
 **i)**   Load and validate data from a specific spreadsheet template   
 **ii)**  Use data preparation tools to help manipulate and transform users data to fit into the spreadsheet template.  
 **iii)** Import data direclty from supported web-services (e.g., time series data from CUAHSI)  
-**v)**   Use pre defined funtions to query and compare data from multiple datasets loaded in WaMDaM   
-**vi)** Export data loaded into WaMDaM to multiple supported models   
-
-
+**iv)**  Use pre defined funtions to query and compare data from multiple datasets loaded in WaMDaM   
+**v)**   Export data loaded into WaMDaM to multiple supported models   
 
 
 
