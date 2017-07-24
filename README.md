@@ -13,8 +13,8 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 
 ## Why WaMDaM?   
 WaMDaM enabels researchers and water managers to organize water management data with two keys aspects that are not supported by existing methods:    
-i) represents the connectivity between system componenets (e.g., demand site, reservoir). It also tracks the configueratons of networks and changes in their topology and data through scenarios.   
-ii) represents one or all these data types: 1) dual values (e.g., binary), 2) numeric values, 3) descriptor values, 4) seasonal numeric values, 5) files, 6) time series, 7) multi-attribute series (i.e., multi-columns).  
+**i)** represents the connectivity between system componenets (e.g., demand site, reservoir). It also tracks the configueratons of networks and changes in their topology and data through scenarios.   
+**ii)** represents one or all these data types: 1) dual values (e.g., binary), 2) numeric values, 3) descriptor values, 4) seasonal numeric values, 5) files, 6) time series, 7) multi-attribute series (i.e., multi-columns).  
 
 
 # Demo instructions
