@@ -2,8 +2,7 @@
 
 ## What is WaMDaM
 
-
-https://github.com/amabdallah/Tests/blob/master/WaMDaM_workflow.jpg
+<img src="https://github.com/amabdallah/Tests/blob/master/WaMDaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>  
 
 1. 
 
