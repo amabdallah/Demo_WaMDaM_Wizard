@@ -29,7 +29,7 @@ The WaMDaM Wizard is an open-source, cross-platform, Python-based graphical user
 
 
 
-# Demo instructions (pre-workshop)
+# Finish before the workshop
 
 1. Download the WaMDaM Wizard executable. It works on Windows [7 and 10] 64 bit operating systems 
 https://bft.usu.edu/96zs3
