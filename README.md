@@ -51,7 +51,7 @@ https://github.com/amabdallah/Demo_WaMDaM_Wizard/blob/master/datasets/template/W
 
 
 
-# Demo instructions (in the workshop)  
+# Demo instructions (the workshop)  
 1. Give a quick demo on how to use the Wizard
 2. Show data comparison results that are enabled by WaMDaM 
 3. Give a quick demo on how to suggest new controlled vocabulary terms
