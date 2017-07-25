@@ -1,8 +1,8 @@
 # Demo the WaMDaM Wizard
 
-In this workshop, we will work with the WaMDaM Wizard to load data into a SQLite database, then query, and compare data across datasets in the Bear River Watershed, Utah. We will use the online controlled vocabulary system to relate different terms across the datasets.  
+In this workshop, we will work with the WaMDaM Wizard to load example water managmenet data into a SQLite database, then query, and compare data across datasets in the Bear River Watershed, Utah. We will use the online controlled vocabulary system to relate different terms across the datasets.  
 
-Please follow the pre-workshop instructions below and let me know if you have issues to solve them before the workshop. Probably its best if you clone the repo to your descktop (but the Wizard executable needs to be downloaded from its url) 
+Please follow the pre-workshop instructions below and let me know if you have issues to solve them before the workshop. Probably its best if you clone the repo to your machine (but the Wizard executable needs to be downloaded from its url)
 
 ## What is WaMDaM?
 
@@ -15,12 +15,13 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 
 ## Why WaMDaM?   
 WaMDaM enables researchers and water managers to organize water management data with two keys aspects that are not supported by existing methods:    
-**i)** represents the connectivity between system components (e.g., demand site, reservoir). It also tracks the configurations of networks and changes in their topology and data through scenarios.   
-**ii)** represents one or all these data types: 1) dual values (e.g., binary), 2) numeric values, 3) descriptor values, 4) seasonal numeric values, 5) files, 6) time series, 7) multi-attribute series (i.e., multi-columns).  
+**i)** represents the connectivity between system components (e.g., demand site and reservoir). It also tracks the configurations of networks and changes in their topology and data through scenarios, with no duplication.   
+**ii)** represents one or all of these data types: 1) dual values (e.g., binary), 2) numeric values, 3) descriptor values, 4) seasonal numeric values, 5) electornic files, 6) time series, 7) multi-attribute series (i.e., multi-columns).  
 
 
 ## Why WaMDaM Wizard?   
-The WaMDaM Wizard is an open-source, cross-platform, Python-based graphical user software to interact with WaMDaM database. Users are not expected to understand the underlying WaMDaM database of schema. The Wizard mainly allows users to:    
+The WaMDaM Wizard is an open-source, cross-platform, Python-based graphical user software to interact with WaMDaM database. By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. 
+The Wizard mainly allows users to automatically:    
 **i)**   Load and validate data from a specific spreadsheet template   
 **ii)**  Use data preparation tools to help manipulate and transform users data to fit into the spreadsheet template.  
 **iii)** Import data directly from supported web-services (e.g., time series data from CUAHSI)  
@@ -33,26 +34,28 @@ The WaMDaM Wizard is an open-source, cross-platform, Python-based graphical user
 
 1. Download the WaMDaM Wizard executable. It works on Windows [7 and 10] 64 bit operating systems 
 https://bft.usu.edu/96zs3
-Double click at the executable. You should see this window. Hopefully it is self-explanatory to work with. 
+Double click at the executable. You should see this window below. Hopefully it is self-explanatory to navigate through. 
 
 <img src="https://github.com/amabdallah/Tests/blob/master/Wizard.PNG" alt="Drawing" style="width: 60px;"/>  
 
 
-2. Download the excel files at the link below. The Excel files have different water management data for the Bear River Watershed, Utah.
+2. Download the excel files at the link below. The Excel files have different water management data for the Bear River Watershed, Utah. We might work with one or nany of them.
 https://github.com/amabdallah/Demo_WaMDaM_Wizard/tree/master/datasets
 
 <img src="https://github.com/amabdallah/Demo_WaMDaM_Wizard/blob/master/Application.PNG" alt="Drawing" style="width: 60px;"/>  
 
 3. Check out this online system for controlled vocabulary that WaMDaM Wizard uses. http://vocabulary.wamdam.org/
 
-4. Bring samples of your own data if you're interested in organizing them into a WaMDaM database. Download this excel template to work with.
+4. Bring samples of your own data if you're interested in organizing them in a WaMDaM database. Download this excel template to work with. Example data could be one or many of these: time series and parameters that apply to nodes and links in your study area.
 https://github.com/amabdallah/Demo_WaMDaM_Wizard/blob/master/datasets/template/WaMDaM_Template_July24.xlsm
+
+
 
 # Demo instructions (in the workshop)  
 1. Give a quick demo on how to use the Wizard
 2. Show data comparison results that are enabled by WaMDaM 
 3. Give a quick demo on how to suggest new controlled vocabulary terms
-4. Everyone work to fit their data into the WaMDaM Wizard and load it into the database 
+4. Allow everyone to work to fit their data into the WaMDaM spreadsheet and load it into the database 
 5. Answer questions and get feedback
 
 
