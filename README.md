@@ -46,7 +46,8 @@ https://github.com/amabdallah/Demo_WaMDaM_Wizard/tree/master/datasets
 
 3. Check out this online system for controlled vocabulary that WaMDaM Wizard uses. http://vocabulary.wamdam.org/
 
-4. Follow the instructions here to install a SQLite Manager Add-on to Mozilla Firefox web browser. We may use this tool to open and query the sqlite files.
+4. Follow the instructions here to install a SQLite Manager Add-on to Mozilla Firefox web browser. We may use this tool to open and query the sqlite files like this one [AllDatasets_July25.sqlite](https://github.com/amabdallah/Demo_WaMDaM_Wizard/blob/master/AllDatasets_July25.sqlite)
+
 https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/UseCasePage/SQLite_Instructions.md   
 
 5. Bring samples of your own data if you're interested in organizing them in a WaMDaM database. Download this excel template to work with. Example data could be one or many of these: time series and parameters that apply to nodes and links in your study area.
