@@ -5,8 +5,8 @@ The production Controlled Vocabulary website for WaMDaM (which uses this code) c
 This online moderated registry aims to promote consistent terminology (i.e., Controlled Vocabularies-(CVs)) to describe water system components and their attributes across datasets, models, and users, while still retaining the native terms. Registering your model's native terms against these CVs will allow you to relate, query, and compare all of your water management data within a single database. 
 
 
-## Required software and hardware
-* Linux local machine 	
+## Required hardware and software 
+* Linux or windows local machine 	
 * A Web server to host this controlled vocabulary server. Here we use an Amazon Elastic Compute Cloud instance (Amazon EC2) at the Amazon Web Services (AWS). Ubuntu Server 16.04
 *	Excel 2007 and on (.xlsx) to organize the CV terms and load them dynamically to the web-server in one command line 
 *	MySQL to host the CV database in the server  
@@ -61,7 +61,9 @@ Now, clone this repository in your local machine, if not, run this command:
 
 `git clone https://github.com/WamdamProject/WaMDaM_ControlledVocabularies`  
 
-Now that you have the key pair and the cloned project, open a terminal on your local machine and change directory to the ansible folder of the cloned repository. You may want to check the Ansible documentation on the README.md file on this folder, to learn about the parameters you can change to customize the deployment: https://github.com/WamdamProject/WaMDaM_ControlledVocabularies/tree/master/ansible#ansible-playbooks
+Now that you have the key pair and the cloned project, open a terminal on your local machine and change directory to the ansible folder of the cloned repository. You may want to check the Ansible documentation on the README.md file on this folder, to learn about the parameters you can change to customize the deployment. 
+
+https://github.com/WamdamProject/WaMDaM_ControlledVocabularies/tree/master/ansible#ansible-playbooks
 
 When you are done customizing, run this command to deploy:
 
@@ -109,7 +111,7 @@ To restore a dump into the container database use:
 You can find the <root-passwd> variable on the `vars.yml` file, in the `mysql_root_passwd` variable
 
 
-## 4. Populate database from Excel  
+## 4. Populate the application database from Excel  
 To initially populate the application with controlled vocabulary terms and their definitions to all some or all of the tables, you can use this generic Excel (.xlsx) template. Fill out the data into Excel, then use the Terminal CMD.EXE
 
 First you need to place the spreadsheets on the `spreadsheets` folder as it's set in the `vars.yml` file. This location is shared with the apps containers, that means that any file you place here would be accesible for both apps in the `spreadsheets` directory.
@@ -130,8 +132,15 @@ Same as the previous step, if everything goes well you should not see any output
 * The content of the `term` column must not contain spaces anywhere. Also you must avoid symbols. Numbers are ok
 
 
-## 5. Forward the EC2 URL to a domain of your choice (e.g., GoDaddy)
+## 5. Set up the EC2 URL to a domain of your choice (e.g., GoDaddy)
+Once deployed, the application will have a URL like this one: ec2-35-162-109-121.us-west-2.compute.amazonaws.com. We provide instructions if you want to set it up to a specific domain. 
 
+Login to your account in GoDaddy. Domains -> My Account -> Domain Management (e.g., wamdam.org)-> DNS Manager. Click "Edit Zone" when it appears. Associate domain with Elastic IP. In the Zone Editor, you will see several tables. In the table where it says "A (Host)", find the entry where Host = "@". Click on that entry to edit the field for "Points to". Add the elastic IP you just got from Amazon. Click "Save Zone File" when you are done. Then we save this record configuration, this is likely to take some minutes until it takes effect.
+
+Check on the current state of DNS propagation after having made changes to your domains records @ 
+https://www.whatsmydns.net
+
+See how the site appears to the rest of the world @ https://geopeeker.com/
 
 
 ## How to uninstall the application   
