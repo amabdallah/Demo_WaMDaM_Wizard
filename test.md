@@ -6,7 +6,8 @@ This online moderated registry aims to promote consistent terminology (i.e., Con
 
 
 ## Required software and hardware
-*	A Web server to host this controlled vocabulary server. Here we use an Amazon Elastic Compute Cloud instance (Amazon EC2) at the Amazon Web Services (AWS).    
+* Linux local machine 	
+* A Web server to host this controlled vocabulary server. Here we use an Amazon Elastic Compute Cloud instance (Amazon EC2) at the Amazon Web Services (AWS).    
 *	Excel 2007 and on (.xlsx) to organize the CV terms and load them dynamically to the web-server in one command line 
 *	MySQL to host the CV database in the server  
 *	Python/Jango  
