@@ -1,4 +1,4 @@
-# WaMDaM_ControlledVocabularies
+# WaMDaM Controlled Vocabularies
 A Python/Django web application and REST API for managing the WaMDaM Controlled Vocabularies.This repository contains the source code for the master controlled vocabulary registry for the Water Management Data Model (WaMDaM).
 
 The production Controlled Vocabulary website for WaMDaM (which uses this code) can be accessed at: http://vocabulary.wamdam.org/
