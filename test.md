@@ -163,7 +163,6 @@ sudo docker restart nginx
 ### Credits
 We adapted the design of this registry from the source code of the ODM2 ControlledVocabularies available on GitHub @ https://github.com/ODM2/ODM2ControlledVocabularies. Thanks to Dr. Jeff Horsburgh and the ODM2 team for promoting #OpenScience by publishing their source code.   
 
-This server of the WaMDaM registry is deployed on Amazon Web Services (AWS) thanks to AWS Educate for their support. The adapted source code is available on GitHub @ https://github.com/amabdallah/WaMDaMControlledVocabularies.   
-
+This server of the WaMDaM registry is deployed on Amazon Web Services (AWS) thanks to AWS Educate for their support. The configuration and deployment of the original repository have been significantly changed using Ansible and Docker without previous knowledge of the app code. Now the deployment and configeration has been simplified and automated to which can be reused many times easily.   
 
 This work was supported by National Science Foundation (NSF) under Grants 1135482 (CI-Water) and 1208732 (iUtah). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the NSF.   
