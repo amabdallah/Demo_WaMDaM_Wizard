@@ -6,14 +6,14 @@ This online moderated registry aims to promote consistent terminology (i.e., Con
 
 
 ## Required software and hardware
-•	A Web server to host this controlled vocabulary server. Here we use an Amazon Elastic Compute Cloud instance (Amazon EC2) at the Amazon Web Services (AWS).   
-•	Excel 2007 and on (.xlsx) to organize the CV terms and load them dynamically to the web-server in one command line 
-•	MySQL to host the CV database in the server
-•	Python/Jango 
-•	Docker to install software containers  
-•	Ansible to deploty the repository from a local machine into the server
-•	Simple Mail Transfer Protocol (SMTP) server to send emails from the CV server to the moderator and the people who submit new terms. Here we use a gmail smpt server
-•	reCAPTCHA service that protects the CV website from spam and abuse as far as submitting new CV terms 
+*	A Web server to host this controlled vocabulary server. Here we use an Amazon Elastic Compute Cloud instance (Amazon EC2) at the Amazon Web Services (AWS).    
+*	Excel 2007 and on (.xlsx) to organize the CV terms and load them dynamically to the web-server in one command line 
+*	MySQL to host the CV database in the server  
+*	Python/Jango  
+*	Docker to install software containers   
+*	Ansible to deploty the repository from a local machine into the server
+* Simple Mail Transfer Protocol (SMTP) server to send emails from the CV server to the moderator and the people who submit new terms. Here we use a gmail smpt server   
+*	reCAPTCHA service that protects the CV website from spam and abuse as far as submitting new CV terms  
 
 
 ## Steps to deploy the WaMDaM CV system 
