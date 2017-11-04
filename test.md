@@ -19,16 +19,16 @@ This online moderated registry aims to promote consistent terminology (i.e., Con
 ** PuTTY SSH terminal to connect from Windows to the remomulator, serial console and network file transfer application.
 
 
-## Steps to deploy the WaMDaM CV system 
+# Steps to deploy the WaMDaM CV system 
 This section provides step by step instructions on how to deploy the WaMDaM Django based application into an Amazon EC2 instance, using Ansible and Docker without previous knowledge of the app code. The instructions are meant for a programmer with backgroud in Linux, Python, Django, cloud services, GitHub, MySql, and Domain Name System (DNS). However, the deployment and configeration has been simplified and automated to which can be reused many times easily.   
 
 
-**1.Create an Amazon Web Services account and an Amazon EC2 Instance**  
+## 1.Create an Amazon Web Services account and an Amazon EC2 Instance  
 First thing you will need is an account on Amazon Web Services (AWS) if you dont have any. Head to this link and follow the instructions to sign up: http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/AboutAWSAccounts.html  
 A Step by step details with screenshots to create an EC2 instance and get to know how to access it are provided here @
 The third below assumes you already have an EC2 instance and you're connected to it.  
 
-**2. Set up the enviroment on your local machine (install Python and Ansible)**  
+## 2. Set up the enviroment on your local machine (install Python and Ansible)  
 To use this instructions you just need some basic knowledged on Linux Commands. Python, Django MySQL and Docker skills are desirable but not mandatory to deploy this application. 
 You are going to deploy this application on remote hosts from a local machine that you have access to. To do so, you need to install some software on this local machine. These instructions are valid for any Debian based distributions (Ubuntu, Linux Mint, etc). Specific instructions for Windows systems are not provided here but these links might be useful:
 * http://python-guide-pt-br.readthedocs.io/en/latest/starting/install/win/
@@ -44,7 +44,7 @@ Now, install ansible using this command (again as root):
 `pip install ansible`
 
 
-**3. Set up the server machine and deploy the application**  
+## 3. Set up the server machine and deploy the application 
 There are two ways to connect and transfer files to the EC2 Ubuntu Server. The first is PuTTY to type commands to the server and the seocnmd is WinSCP to trasnfer files. Instructions and screenshots on how you can use them are available here @ 
 
 Before you deploy any application on this instance you need to install python on the EC2 instance. So, login to the instance using the __key pair__ previously provided when you created the EC2 instance. Once you login on the instance, run this command:
@@ -76,8 +76,7 @@ ansible-playbook -i hosts deploy.yml --private-key /home/user/my-aws-keys/WATER.
 ```
 
 Then you will see some output on your screen, pointing the steps that are being executed and its outcome. After a few minutes the deployment should be sucessful (if you don't see any messages in red color), meaning that your apps are up and running. Congratulations!
-
-**Useful System Commands**
+## Useful System Commands
 
 The following commands are meant to be run in the EC2 instance once the applications are successfully deployed and running
 
@@ -110,7 +109,7 @@ To restore a dump into the container database use:
 You can find the <root-passwd> variable on the `vars.yml` file, in the `mysql_root_passwd` variable
 
 
-**4. Populate database from Excel**  
+## 4. Populate database from Excel  
 To initially populate the application with controlled vocabulary terms and their definitions to all some or all of the tables, you can use this generic Excel (.xlsx) template. Fill out the data into Excel, then use the Terminal CMD.EXE
 
 First you need to place the spreadsheets on the `spreadsheets` folder as it's set in the `vars.yml` file. This location is shared with the apps containers, that means that any file you place here would be accesible for both apps in the `spreadsheets` directory.
@@ -131,11 +130,11 @@ Same as the previous step, if everything goes well you should not see any output
 * The content of the `term` column must not contain spaces anywhere. Also you must avoid symbols. Numbers are ok
 
 
-**5. Forward the EC2 URL to a domain of your choice (e.g., GoDaddy) ** 
+## 5. Forward the EC2 URL to a domain of your choice (e.g., GoDaddy)
 
 
 
-5. How to uninstall the application   
+## How to uninstall the application   
 If you want to uninstall the WaMDaM application run the following commands from the EC2 instance, to remove the nginx virtualhost
 
 ```
@@ -160,7 +159,7 @@ sudo docker restart nginx
 
 
 
-### Credits
+## Credits
 We adapted the design of this registry from the source code of the ODM2 ControlledVocabularies available on GitHub @ https://github.com/ODM2/ODM2ControlledVocabularies. Thanks to Dr. Jeff Horsburgh and the ODM2 team for promoting #OpenScience by publishing their source code.   
 
 This server of the WaMDaM registry is deployed on Amazon Web Services (AWS) thanks to AWS Educate for their support. The configuration and deployment of the original repository have been significantly changed using Ansible and Docker without previous knowledge of the app code. Now the deployment and configeration has been simplified and automated to which can be reused many times easily.   
